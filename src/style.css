@@ -1,0 +1,52 @@
+:root {
+  --nav-color: rgb(102, 51, 153);
+}
+
+body {
+  margin: 0;
+}
+
+#navbar {
+  height: 80px;
+  background-color: var(--nav-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#navbar a {
+  height: 80px;
+  width: 150px;
+  text-align: center;
+  font-size: 25px;
+  font-family: 'Radio Canada', sans-serif;
+  font-weight: bold;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+#navbar a:hover {
+  background-color: rgb(61, 30, 92);
+}
+
+#background {
+  background-image: url(../media/background.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  padding: 100px;
+}
+
+#main {
+  background-color: red;
+  height: 100px;
+  color: white;
+  font-size: 15px;
+}
+
+#footer {
+  background-color: yellow;
+}
