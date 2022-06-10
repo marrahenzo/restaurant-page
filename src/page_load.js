@@ -5,7 +5,7 @@ export default function loadPage() {
   const nav = document.createElement('div');
   nav.id = 'navbar';
   const navTabs = [
-    document.createElement('p'),
+    document.createElement('a'),
     document.createElement('a'),
     document.createElement('a'),
     document.createElement('a'),
@@ -13,13 +13,10 @@ export default function loadPage() {
   navTabs[0].id = 'logo';
   navTabs[0].textContent = 'PizzaPodi';
   navTabs[1].id = 'home';
-  navTabs[1].href = '#';
   navTabs[1].textContent = 'Home';
   navTabs[2].id = 'menu';
-  navTabs[2].href = '#';
   navTabs[2].textContent = 'Menu';
   navTabs[3].id = 'contact';
-  navTabs[3].href = '#';
   navTabs[3].textContent = 'Contact';
 
   const background = document.createElement('div');
