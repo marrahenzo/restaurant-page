@@ -11,8 +11,7 @@ export default function loadPage() {
     document.createElement('a'),
   ];
   navTabs[0].id = 'logo';
-  const logoImage = document.createElement('img');
-  logoImage.src = '../media/logo.png';
+  navTabs[0].textContent = 'PizzaPodi';
   navTabs[1].id = 'home';
   navTabs[1].textContent = 'Home';
   navTabs[2].id = 'menu';
@@ -35,7 +34,6 @@ export default function loadPage() {
   gitHubLogo.width = 15;
 
   //Append elements
-  navTabs[0].append(logoImage);
   nav.append(...navTabs);
   background.append(main);
   footerCredits.append(gitHubLogo);
