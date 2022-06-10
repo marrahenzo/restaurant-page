@@ -14,11 +14,11 @@ export default function loadPage() {
   const logoImage = document.createElement('img');
   logoImage.src = '../media/logo.png';
   navTabs[1].id = 'home';
-  navTabs[1].id = 'home';
+  navTabs[1].textContent = 'Home';
   navTabs[2].id = 'menu';
-  navTabs[2].id = 'menu';
+  navTabs[2].textContent = 'Menu';
   navTabs[3].id = 'contact';
-  navTabs[3].id = 'contact';
+  navTabs[3].textContent = 'Contact';
 
   const background = document.createElement('div');
   background.id = 'background';
@@ -32,7 +32,7 @@ export default function loadPage() {
   footerCredits.textContent = '2022 © Hernán Marrapodi';
   const gitHubLogo = document.createElement('img');
   gitHubLogo.src = '../media/github-logo.png';
-  gitHubLogo.width = 25;
+  gitHubLogo.width = 15;
 
   //Append elements
   navTabs[0].append(logoImage);
