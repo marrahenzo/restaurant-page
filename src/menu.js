@@ -3,50 +3,57 @@ export default function loadMenu() {
 
   const pizzas = [
     new Pizza(
-      'Salsiccia',
-      'none',
-      'Tomato sauce, Mozarella, Tomato, Homemade sausage, Garlic, Basil'
+      'Primavera',
+      '../media/primavera.jpg',
+      'Tomato sauce, Mozarella, Tomato, Olives, Hard-boiled eggs and Oregano'
     ),
     new Pizza(
-      'Gamberi',
-      'none',
-      'Tomato sauce, Mozarella, Shrimps, Feta cheese, Olives, Basil'
+      'Ham and Eggs',
+      '../media/hamandeggs.jpg',
+      'Tomato sauce, Mozarella, Ham, Olives, Hard-boiled eggs and Oregano'
     ),
     new Pizza(
-      'Pepe',
-      'none',
-      'Tomato sauce, Mozarella, Chilli flakes, Olives, Basil'
+      'Fugazza',
+      '../media/fugazza.jpg',
+      'Provolone, Onions, Olives and Oregano'
     ),
     new Pizza(
-      'Disgustoso',
-      'none',
-      'Tomato sauce, Bacon, Pineapple, Olives, Basil'
+      'Fried Eggs',
+      '../media/friedeggs.jpg',
+      'Tomato sauce, Mozzarella, 4 Fried eggs, Olive oil and Oregano'
     ),
     new Pizza(
-      'Colorato',
-      'none',
-      'Tomato sauce, Mozarella, Onion, Pepper, Champignons, Basil'
+      'Hard-Boiled Eggs',
+      '../media/boiledeggs.jpg',
+      'Tomato sauce, Mozarella, Hard-boiled eggs, Olive oil and Oregano'
     ),
     new Pizza(
-      'Pomodoro',
-      'none',
-      'Tomato sauce, Mozarella, Tomato, Onion, Feta cheese, Chilli'
+      'Corn',
+      '../media/corn.jpg',
+      'Tomato sauce, Mozarella, Corn, Olives and Oregano'
     ),
     new Pizza(
-      'Crema',
-      'none',
-      'White sauce, Mozarella, Shrimps, Salmon, Pineapple, Olives, Basil'
+      'Roquefort',
+      '../media/roquefort.jpg',
+      'Tomato Sauce, Mozarella, Roquefort, Olives and Oregano'
     ),
     new Pizza(
-      'Carne',
-      'none',
-      'Tomato sauce, Mozarella, Homemade sausage, Bacon, Garlic, Pepper, Chilli'
+      'Napolitana',
+      '../media/napolitana.jpg',
+      'Tomato sauce, Mozarella, Tomato, Provolone, Garlic, Parsley, Olives and Oregano'
     ),
   ];
 
   for (let pizza of pizzas) {
     let item = document.createElement('div');
-    item.append(pizza.image, pizza.name, pizza.ingredients);
+    let name = document.createElement('p');
+    name.textContent = pizza.name;
+    let image = document.createElement('img');
+    image.src = pizza.image;
+    let ingredients = document.createElement('p');
+    ingredients.textContent = pizza.ingredients;
+    item.className = 'pizza';
+    item.append(name, image, ingredients);
     main.append(item);
   }
 }
