@@ -1,0 +1,140 @@
+:root {
+  --nav-color: rgba(3, 39, 117, 0.85);
+}
+
+body {
+  margin: 0;
+  background-image: url(../media/background.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+#navbar {
+  background-color: var(--nav-color);
+  display: grid;
+  grid-template-rows: 1fr 0.2fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  padding: 0 30vw;
+  padding-bottom: 10px;
+}
+
+#navbar a {
+  height: 80px;
+  width: 150px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: 'Radio Canada', sans-serif;
+  font-weight: bold;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  grid-row: 2/3;
+}
+
+#navbar a:hover {
+  transform: translateY(-10px);
+}
+
+#navbar a.active {
+  border-bottom: 2px solid white;
+}
+
+#navbar p {
+  grid-row: 1/2;
+  grid-column: 1/4;
+  font-family: 'Josefin Sans', sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 60px;
+  margin: 0;
+  margin-top: 35px;
+  color: white;
+}
+
+#background {
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+#main {
+  background-color: var(--nav-color);
+  color: white;
+  font-size: 30px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+  border-radius: 20px;
+  width: 60vw;
+  text-align: center;
+  border: 5px solid rgb(0, 25, 78);
+}
+
+#main.menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.pizza {
+  background-color: rgba(3, 39, 117, 0.4);
+  margin: 10px;
+  padding: 10px;
+  border: 0.5px solid white;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+  box-shadow: 3px 3px;
+}
+
+.pizza:hover {
+  transform: translateY(-10px);
+}
+
+.pizza img {
+  max-width: 350px;
+}
+
+#main img {
+  border-radius: 10px;
+}
+
+#email {
+  color: rgb(77, 177, 243);
+}
+
+#footer {
+  background-color: var(--nav-color);
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#footer a {
+  text-decoration: none;
+  color: white;
+}
+
+#footer > div:last-child {
+  padding-bottom: 10px;
+  transition: all 0.2s ease;
+}
+
+#footer > div:last-child:hover {
+  transform: translateY(-5px);
+}
+
+#footer img {
+  padding-left: 10px;
+  position: relative;
+  top: 5px;
+}
