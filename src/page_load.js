@@ -5,7 +5,7 @@ export default function loadPage() {
   const nav = document.createElement('div');
   nav.id = 'navbar';
   const navTabs = [
-    document.createElement('a'),
+    document.createElement('p'),
     document.createElement('a'),
     document.createElement('a'),
     document.createElement('a'),
@@ -29,14 +29,22 @@ export default function loadPage() {
   footer.id = 'footer';
   const footerCredits = document.createElement('a');
   footerCredits.textContent = '2022 © Hernán Marrapodi';
-  const gitHubLogo = document.createElement('img');
-  gitHubLogo.src = '../media/github-logo.png';
-  gitHubLogo.width = 15;
+  footerCredits.href = 'https://github.com/marrahenzo';
+  const footerCredits2 = document.createElement('p');
+  footerCredits2.textContent =
+    'Photos by Aurélien Lemasson-Théobald, Brenna Huff and Tamara Malaniy from unsplash.com as well as photos from pizzasargentinas.com';
+  const gitHubLogo = document.createElement('a');
+  gitHubLogo.href = 'https://github.com/marrahenzo';
+  const gitHubLogoImage = document.createElement('img');
+  gitHubLogoImage.src = '../media/github-logo.png';
+  gitHubLogoImage.width = 20;
+  const creditsContainer = document.createElement('div');
 
   //Append elements
   nav.append(...navTabs);
   background.append(main);
-  footerCredits.append(gitHubLogo);
-  footer.append(footerCredits);
+  gitHubLogo.append(gitHubLogoImage);
+  creditsContainer.append(footerCredits, gitHubLogo);
+  footer.append(footerCredits2, creditsContainer);
   content.append(nav, background, footer);
 }
