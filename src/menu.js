@@ -4,42 +4,42 @@ export default function loadMenu() {
   const pizzas = [
     new Pizza(
       'Primavera',
-      '../media/primavera.jpg',
+      './media/primavera.jpg',
       'Tomato sauce, Mozarella, Tomato, Olives, Hard-boiled eggs and Oregano'
     ),
     new Pizza(
       'Ham and Eggs',
-      '../media/hamandeggs.jpg',
+      './media/hamandeggs.jpg',
       'Tomato sauce, Mozarella, Ham, Olives, Hard-boiled eggs and Oregano'
     ),
     new Pizza(
       'Fugazza',
-      '../media/fugazza.jpg',
+      './media/fugazza.jpg',
       'Provolone, Onions, Olives and Oregano'
     ),
     new Pizza(
       'Fried Eggs',
-      '../media/friedeggs.jpg',
+      './media/friedeggs.jpg',
       'Tomato sauce, Mozzarella, 4 Fried eggs, Olive oil and Oregano'
     ),
     new Pizza(
       'Hard-Boiled Eggs',
-      '../media/boiledeggs.jpg',
+      './media/boiledeggs.jpg',
       'Tomato sauce, Mozarella, Hard-boiled eggs, Olive oil and Oregano'
     ),
     new Pizza(
       'Corn',
-      '../media/corn.jpg',
+      './media/corn.jpg',
       'Tomato sauce, Mozarella, Corn, Olives and Oregano'
     ),
     new Pizza(
       'Roquefort',
-      '../media/roquefort.jpg',
+      './media/roquefort.jpg',
       'Tomato Sauce, Mozarella, Roquefort, Olives and Oregano'
     ),
     new Pizza(
       'Napolitana',
-      '../media/napolitana.jpg',
+      './media/napolitana.jpg',
       'Tomato sauce, Mozarella, Tomato, Provolone, Garlic, Parsley, Olives and Oregano'
     ),
   ];

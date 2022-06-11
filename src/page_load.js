@@ -36,7 +36,7 @@ export default function loadPage() {
   const gitHubLogo = document.createElement('a');
   gitHubLogo.href = 'https://github.com/marrahenzo';
   const gitHubLogoImage = document.createElement('img');
-  gitHubLogoImage.src = '../media/github-logo.png';
+  gitHubLogoImage.src = './media/github-logo.png';
   gitHubLogoImage.width = 20;
   const creditsContainer = document.createElement('div');
 

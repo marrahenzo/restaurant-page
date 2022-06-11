@@ -9,7 +9,7 @@ export default function loadContact() {
   phone.textContent = 'Call Us! 📞 +54 9 11 1234 5678';
 
   const image = document.createElement('img');
-  image.src = '../media/contact.jpg';
+  image.src = './media/contact.jpg';
   image.style.width = '500px';
 
   const email = document.createElement('p');
