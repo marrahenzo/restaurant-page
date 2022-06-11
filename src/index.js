@@ -16,6 +16,7 @@ homeButton.className = 'active';
 
 homeButton.addEventListener('click', () => {
   main.innerHTML = '';
+  main.className = '';
   loadHome();
   clearButtons();
   homeButton.className = 'active';
@@ -23,6 +24,7 @@ homeButton.addEventListener('click', () => {
 
 menuButton.addEventListener('click', () => {
   main.innerHTML = '';
+  main.className = 'menu';
   loadMenu();
   clearButtons();
   menuButton.className = 'active';
@@ -30,6 +32,7 @@ menuButton.addEventListener('click', () => {
 
 contactButton.addEventListener('click', () => {
   main.innerHTML = '';
+  main.className = '';
   loadContact();
   clearButtons();
   contactButton.className = 'active';
