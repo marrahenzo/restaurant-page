@@ -16,7 +16,7 @@ export default function loadHome() {
     'Ask us about our daily specialties and promos! We may even give you some extras if you ask nicely ;)';
 
   const image = document.createElement('img');
-  image.src = '../media/home.jpg';
+  image.src = './media/home.jpg';
   image.style.width = '500px';
 
   const slogan = document.createElement('p');
